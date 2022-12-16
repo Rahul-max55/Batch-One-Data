@@ -1,0 +1,49 @@
+When we try to access the value of parent , child and siblings we use methods
+
+  <div class="ul_parent">
+        <ul class="li_prent">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+1.parentElement - document.querySelector('.li_prent').parentElement;
+               // output - ul_parent
+
+2.parentNode - document.querySelector('.li_prent').parentNode;
+               // output - ul_parent
+
+    // This two methods is diff because the parentElement method returns null if 
+    parent is not present but parentNode method is returns anything not returns null
+
+3.children - This method returns the child inside the parent element 
+              and put into  array but not returns child text.
+        Ex -  document.querySelector('.li_prent').children;
+
+4.childNodes - this method returns children and also returns text inside     childs. method considers spaces and enter activity and store it into a array. 
+            Ex -  document.querySelector('.li_prent').childNodes;
+
+5.firstChild  - this is returns value according to the childNodes array index 
+              and we know that childNode is considers all text and spaces so firstChild has 
+               return childNode index[0] value allways            
+
+6.lastChild - same as firstChild
+
+7.firstElementChild - this is used to get the first child inside the prent element.
+
+8.lastElementChild - this is used to get the last child inside the prent element.
+
+9.previousSibling - this is returns siblings according to *childNodes*.
+
+10.nextSibling - this is returns siblings according to *childNodes*.
+
+11.previousElementSibling - this is returns siblings according to our html prent element childs siblings.
+
+12.nextElementSibling - this is returns siblings according to our html prent element childs siblings.
+
+
+
+
+

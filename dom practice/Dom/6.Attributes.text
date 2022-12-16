@@ -1,0 +1,19 @@
+1.hasAttributes - this methods checks any attribute is availalbe or not.
+         ex -let x = document.querySelector(".paragraph");
+            let y = x.hasAttribute("id");          
+            console.log(y);
+            //return - false
+
+2.hasChildNodes - returns true if any child is present in parent element.
+
+Note - When we create a space in a parent this method is also returns true (use carefully this methods);
+
+3.isEqualNode() - This is used to compare two Elements
+               in this method those perimeter must be when it is same methods returns true otherwise returns false.
+     1.Tag Name          
+     2.Tag Value         
+     3.attributes          
+     4.attribute Value          
+     5.compare parent child must be same          
+   ex - target1.isEqualNode(target2); 
+

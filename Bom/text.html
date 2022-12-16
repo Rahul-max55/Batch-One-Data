@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            width: 150px;
+            height: 50px;
+            /* position: fixed; */
+
+        }
+
+     
+    </style>
+
+</head>
+
+<body>
+
+
+    <button onclick="openFun()">open Button</button>
+    <button onclick="closeFun()">close Button</button>
+
+    <p style="width:10000px">
+        inventore quo. Voluptatum sequi quod quas mollitia debitis officiis iste, re ad architecto exercitationem!
+    </p>
+    <script>
+
+      var myWindow;
+        const openFun = () => {
+            myWindow = window.open("https://translate.google.com/", "_blank", "width=500px , height=200px , left=500px , top=200px");
+        }
+        const closeFun = () => {
+            myWindow.close();
+        }
+    </script>
+</body>
+
+</html>

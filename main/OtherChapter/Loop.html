@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        Enter No:<input type="text" id="number" /><br />
+        <input type="button" value="submit" onclick="change()" />
+    </form>
+    <script>
+
+
+
+        function change() {
+            let sel = document.getElementById("number").value;
+            if (/\@/ig.test(sel) == "true") {
+                alert("Entered email id is right")
+            }
+            else {
+                alert("Entered email id is Wrong")
+            }
+        }
+
+        //    let y = function arr(){
+        //     } ;
+        //     let x = typeof(y);
+        //     console.log(x);
+        // let obj;
+        // obj = undefined;
+        // console.log(obj);
+        // console.log(typeof(obj));
+
+        //     function ShowPara(){
+        //         let paragraph =  document.getElementById("para");
+        //         paragraph.style.display = "block";
+        //   }
+
+        // let x = details.values();
+        // console.log(x);
+        // for (let y of x) {
+        //     console.log(y);
+        // }
+
+
+        // let intro = "my name is 4567 is  Rahul Birla";
+        // let intro = "Hello look at you looooking";
+        // console.log(intro);
+        // console.log(/^i/m.test(intro));
+        // console.log(intro.match(/^is/m));
+
+        // console.log(/^i/g.test(intro));
+        // console.log(intro.match(/(is | si)/g));
+        // console.log(intro.match(/\d/g));
+        // console.log(intro.match(/\s/g));
+        // console.log(intro.match(/lo\b/));
+        // console.log(intro.match(/lo?/g));
+
+
+
+        // let n = 22;
+
+        // if (n >= 1) {
+        //     console.log("1");
+        //     for (let j = 2; j <= n; j++){
+        //         let primeNumber = "true";
+        //         for (let i = 2; i < j; i++){
+        //             if (j % i == 0) {
+        //                 primeNumber = "false";
+        //                 break;
+        //             }
+        //         }
+        //         if (primeNumber == "true") {
+        //             console.log(j);
+        //         }
+        //     }
+        // }
+
+
+        // 5 % 2 = 1;
+        // j % i = 0 / 1
+
+
+        
+        // for(let i =1 ; i<=5 ; i++){
+        //     for(let j=1 ; j <=i ; j++){
+        //         document.write(j)
+        //     }
+        //      document.write("</br>");
+        // }
+
+        
+
+
+
+    </script>
+
+    <script type="module" src="./demo1.js"></script>
+
+</body>
+
+</html>

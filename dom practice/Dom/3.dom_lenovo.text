@@ -1,0 +1,80 @@
+> Add EventListner -
+
+This method takes three parameter 
+1.event - click , mouseenter , mousehover.
+2.function is to be executed.
+3.useCapture - this takes true or flase discuss in below.
+
+>basic method -  document.getElementById("heading").onclick = sum;
+                Note - do not use paranthesis in sum
+
+>Using Events - 
+     document.getElementById("heading").addEventListener("click" , sum )
+     const sum = () =>{
+        alret("i am a sum function");
+     }
+
+     // we can use the event listner and run the function
+     // we can also runs the multiple functions in one element
+
+     1.document.getElementById("heading").addEventListener("click", sum)
+        function sum(){
+            document.querySelector("#heading").style.backgroundColor = "red"
+        }
+            
+     2.document.getElementById("heading").addEventListener("mouseenter", function () {  document.querySelector("#heading").style.backgroundColor = "green"})
+
+    //In the mouseenter example  enter function is always takes anonymos function
+    // we can symplify the code using the this method replace
+                (document.querySelector("#heading") = this)
+       Ex -
+        document.getElementById("heading").addEventListener("mouseenter", function () {  this.style.backgroundColor = "green"})
+
+
+3.useCapture - 
+        document.querySelector('.outer').addEventListener("click" , function(){
+            alert('outer Div')
+        } , true)
+
+        document.querySelector('.inner').addEventListener("click" , function(){
+            alert('inner Div')
+        } , false)   
+
+        // we using third parameter and this parameter deafult false.
+        when we create a two divs parent and child and when we click on child parent also clicked but we can change the order of execution using true false 
+        when we change value false to true outer div is executed first and then inner div is executed.
+
+
+> We can remove eventlistner using removeEventListener -
+
+      document.querySelector('.outer').addEventListener("mouseleave" , abc)
+
+        function abc () {
+                alert('outer Div')
+            } 
+
+        document.querySelector('.outer').addEventListener("click" , function(){
+              document.querySelector('.outer').removeEventListener("mouseleave" , abc)
+        })
+       
+       // removeEventListener takes two arguments frist is event and secound is function.
+
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+     
+       
+
+
+                          

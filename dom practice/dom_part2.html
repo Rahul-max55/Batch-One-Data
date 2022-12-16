@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto itaque dolore nihil! Iste voluptas amet
+        eligendi dolores, corrupti voluptate blanditiis veritatis laboriosam velit.</p>
+
+    <div class="outer">
+        <div class="inner">
+            INNER DIV
+            <div class="box red">A</div>
+            <div class="box red">jhgjhg</div>
+            <div class="box blue">B </div>
+            <div class="box green">C</div>
+        </div>
+    </div>
+
+    <script>
+
+        // let comment = document.createComment("i am a Comment");
+        // console.log(comment);
+
+        // let elem = document.createElement("h1");
+        // let content = document.createTextNode("I am a content");
+        // console.log(elem);
+        // console.log(content);
+        // elem.appendChild(content);
+        // console.log(elem);
+        // document.querySelector(".outer").children[0].appendChild(elem);
+
+        // let sel = document.querySelector(".outer");
+        // sel.insertBefore(elem , sel.children[0]);
+
+
+        let sel = document.querySelector(".outer");
+        let innerSel = document.querySelector(".inner");
+        let red = document.querySelector(".red");
+        let innerTag = document.querySelector(".inner").children[0];
+        // sel.insertAdjacentHTML("AfterEnd" , "<h1>i am a content </h1>")
+
+        let newElem = document.createElement("h1");
+        let content = document.createTextNode("I am a content");
+        newElem.appendChild(content);
+
+        // innerSel.replaceChild(newElem , innerSel.children[0]);
+        // innerSel.removeChild(innerSel.children[0]);
+
+
+        // let x = sel.cloneNode(true);
+        // let y = sel.cloneNode(false);
+
+        // console.log(y);
+        // console.log(x);
+        // console.log(sel);
+
+        // let x = red.contains(innerSel);
+        // console.log(x);
+
+        // let x = red.hasAttribute("id");
+        // console.log(x);
+
+        // let x = red.hasChildNodes();
+        // console.log(x);
+
+        let black = document.querySelector(".red");
+
+        let x = red.isEqualNode(black);
+        console.log(x);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // practice
+
+        // let sel = document.querySelector(".red");
+        // sel.insertBefore(elem , sel.childNodes[2]);
+        // sel.insertAdjacentHTML("beforeend" , "<h1>I am new element</h1>")
+
+
+        // sel.removeChild(sel.childNodes[1]);
+
+        // let clo1 = sel.cloneNode(false);
+        // console.log(clo1);
+
+        // let clo2 = sel.cloneNode();
+        // console.log(clo2);
+
+        // let s = document.querySelector(".outer")
+        // s.innerHTML = clo2;
+
+
+        // let h = sel.hasChildNodes();
+        // console.log(h);
+
+    </script>
+</body>
+
+</html>

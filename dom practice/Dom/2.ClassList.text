@@ -1,0 +1,20 @@
+classList methods - 
+ 1.add - document.querySelector('.outer').classList.add("xyz");                     
+ 2.remove - document.querySelector('.outer').classList.remove("xyz");   
+ 3.length -  Returns how many classes added in class attribut
+             ex-   document.querySelector('.outer').classList.remove("xyz");      
+ 4.toggle - When we add class in a click and remove in click so we use toggle method
+  ex -
+         document.querySelector("#heading").addEventListener("click" , function(){
+              document.getElementById("#paragraph").classList.toggle("xyz")
+         })
+
+ 5.item() - This is used to access the class index number.item takes index number not a class name 
+    ex -
+        let x = document.querySelector(".paragraph").classList.item(1)            
+       console.log(x); 
+
+ 6.contains() -This is returns true if class exists and false when not exists.
+               let x = document.querySelector(".paragraph").classList.contains(1)            
+               console.log(x); 
+   

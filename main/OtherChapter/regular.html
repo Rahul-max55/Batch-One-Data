@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+
+        <input type="text" id="data">
+        <input type="button" value="Check the Email" onclick="showData()">
+
+    </form>
+
+    <script>
+
+
+        function showData() {
+            let x = document.getElementById("data").value;
+            let check = /[a-zA-Z0-9]\@+[a-zA-Z]+\./.test(x);
+            if(check == true ){
+                console.log("Entered Email is currect");
+            }
+            else{
+                console.log("Wrong");
+            }
+        }
+
+      
+
+
+
+        // let pass  = "525";
+        // console.log(intro);
+        // let x = /[a-zA-Z]/ig.test(pass);
+        // let y = intro.match(/[1234]/ig);
+        // console.log(x);
+        // console.log(y);
+
+        // if(x == false){
+        //     alert("correct password");
+        // }
+        // else{
+        //     alert("incorrect password");
+
+        // }
+
+
+        // let name = "My name is My Rahul birla";
+        // let x = /MY/ig.test(name);
+        // let y = name.match(/^MY rahul/i)
+        // console.log(x);
+        // console.log(y);
+
+        // let x = /(my | name)/i.test(name);
+        // let y = name.match(/(my | is )/ig);
+        // console.log(x);
+        // console.log(y);
+
+        // let name = "M name is \nM Rahul \nMy birla";
+        // console.log(name);
+        // let x = /^My/m.test(name);
+        // let y = name.match(/^My/m);
+        // console.log(x);
+        // console.log(y);
+
+        // let name = "My name is Rahul birla";
+        // console.log(name);
+        // let x = /[abc]/m.test(name);
+        // let y = name.match(/[A-Z]/g);
+        // console.log(x);
+        // console.log(y);
+
+        // [0-9]
+
+        //  let name = "My name is 455 Rahul birla";
+        // console.log(name);
+        // let x = /\d/m.test(name);
+        // let y = name.match(/\d/g);  // \d == [0-9]
+        // console.log(x);
+        // console.log(y);
+
+        // let name = "My name is 455 Rahul birla";
+        // console.log(name);
+        // let x = /\s/m.test(name);
+        // let y = name.match(/\s/g);  // \d == [0-9]
+        // console.log(x);
+        // console.log(y);
+
+
+        // let name = "hello is my loo l name looo ";
+        // console.log(name);
+        // let x = /\bis/m.test(name);
+        // let y = name.match(/a\b/g);  // \d == [0-9]
+        // console.log(x);
+        // console.log(y);
+
+
+
+        // let name = "hello is my loo lollll name looo ";
+        // let x = /is+/m.test(name);
+        // console.log(x);
+        // let y = name.match(/o+/g);
+        // let y1 = name.match(/o*/g);
+        // let y2 = name.match(/o?/g);
+        // console.log(y);
+        // console.log(y1);
+        // console.log(y2);
+
+
+    </script>
+
+    <script type="module" src="./demo2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+*** Basic Events ***
+
+1.click (onclick)
+2.Double Click (ondblclick)
+3.Right Click(oncontextmenu)
+4.mouse hover(onmouseenter)
+5.mouse out(onmouseout)
+6.mouse Down(onmousedown) - its is a same as click
+7.mouse Up(onmouseup)    - function runs when mouse click is relese.
+8.Key Press (onkeypress) - This is work only body tag and form tag when we pess key function fire
+9.Key Up(onkeyup) - When keys are relese then function is fire.
+
+// Note - **** This Events is work only on Body tag because this EventsWindow
+
+10.Load(onload) - 
+11.Unload(onunload)
+12.Resize(onresize) 
+13.Scroll(onscroll)
+
+
+
+*******Form - events in Form *****
+
+1.focus - This is used to when we focus any element -
+       ex - 
+       <input type="text" id="fname" placeholder="fname" onfocus="focusfun(this)">
+       <input type="text" id="lname" placeholder="lname" onfocus="focusfun(this)" >
+
+        function focusfun(this){
+            this.style.background = "red";
+        }
+
+        Note - ***this referse input field where we clicked 
+              (it is important)
+
+2.blur() - this is used to remove the css when we click another fields.
+
+    <input type="text" id="fname" placeholder="fname" onblur="blurfun(this)">
+       <input type="text" id="lname" placeholder="lname" onblur="blurfun(this)" >
+
+        function focusfun(this){
+            this.style.background = "red";
+        }
+        function blurfun(this){
+            this.style.background = " ";
+        }
+
+3.input - when we get the input value in the time of user typing we use input() method. this method only works with input not working on checkbox and others.
+ex -
+        <input type="text" id="fname" placeholder="fname" oninput="inputfun(this)">
+
+        function inputfun(this){
+            let User_Text = this.value;
+        }
+
+4.change - this is works when we input, data into input field and leave the field(click outside field).
+       ex -
+          <input type="text" id="fname" placeholder="fname" onchange="focusfun(this)">
+                <div id="test"></div>
+
+             function focusfun(thi){
+           let tests =  document.getElementById("test");
+           let values = thi.value;
+           tests.innerHTML = values;
+        }
+
+
+
+
+
+

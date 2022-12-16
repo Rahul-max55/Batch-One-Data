@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <button onclick="x()" >
+        click
+    </button> -->
+
+    <script>
+        // const details1 = ["Arjun" , 18 , "indore"];
+        // console.log(details1);
+
+        // const details2 = [];
+        // details2[0] = "Arjun";
+        // details2[1] = 18;
+        // details2[2] = "indore";
+
+        // console.log(details2);
+
+        // const details3 = new Array ("Arjun" , 18 , "indore");
+        // console.log(details3);
+
+        // let sum = function(){
+        //     return "a";
+        // }
+
+        // const arr = ["array in the function"]
+
+        // const obj = {
+        //     name:"arjun"
+        // }
+
+
+        // const details1 = [ obj , sum() , arr];
+        // details1[5] = "rahul";
+        // console.log(details1);
+
+        // methods
+
+
+        // const details = ["Arjun" , 18 , "indore"];
+        // const details1 = ["PAtidar" , 22 , "Thikri"];
+        // let change = details.toString();
+        // let change = details.join(" + ");
+        // let change = details.push("rahul");
+        // let change = details.pop();
+        // let change = details.shift();
+        // let change = details.unshift("Rahul");
+        // let complete = details.concat(details1);
+        // console.log(complete);
+        // let change = details.splice(2 , 0);
+        // let change = details.slice(0 , 2);
+        // console.log(change);
+        // console.log(details);
+
+
+        // const details1 = ["arjun" , 18 , "indore"];
+        // console.log(details1);
+
+        // const details2 = [];
+        // details2[0] = "arjun";
+        // details2[1] = 18;
+        // details2[2] = "indore";
+        // console.log(details2);
+
+        // let obj = new Array("arjun" , 18 , "indore")
+        // console.log(obj);
+
+        // const details = ["arjun" , 18 , "indore"];
+        // details[0] = "ritik";
+        // console.log(details);
+
+        // let sum = function(){
+        //     return "I am a return function"
+        // }
+
+        // const det = {
+        //     fullname:"Rahul",
+        //     age:20
+        // }
+
+
+
+        // const demo = ["hello i am a array" , 24]
+
+        // const details = [demo, sum() , det , "some" , demo];
+
+        // console.log(details);
+
+
+        // const array = {
+        //     fullname: "Rahul",
+        //     age: 20,
+        //     arr: ["rahul", 45],
+        // }
+
+        // console.log(array.arr);
+
+
+        // let arr = ["arjun", 18, "indore"];
+        // console.log(obj.length);
+        // console.log(typeof det);
+        // console.log(typeof arr);
+        // console.log(Array.isArray(array));
+
+
+        // let arr = ["arjun", 18, "indore"];
+        // arr[5] = "rahul";
+
+        // console.log(arr);
+
+        // methods in array
+
+        // let details = ["arjun", 18, "indore"];
+        // let details2 = ["rahul", 12, "Pithampur"];
+        // let details3 = ["ritik", 12, "Pithampur"];
+
+        // let str = details.toString();
+        // let str = details.join(" + ");
+        // let str = details.pop();   // str = Indore
+        // let str = details.push("ritik");  
+
+        // let str = details.unshift("ritik");  
+        // let str = details.shift();
+        // console.log(str);
+
+        // let details4 = details.concat(details2 , details3 , "birla" , 5);
+
+        // console.log(details4);
+
+        // let details = ["arjun", 18, "indore"];
+
+        // let new_Arr = details.slice(0 , 2);
+        // console.log(new_Arr);
+
+        // let details = [56, 18, 15 , 1 ,78 , 98];
+
+
+        // let x1 = details.forEach(rahul);
+        // function rahul(value, index, array) {
+        //     return value +"3";
+        // } 
+
+        // console.log(x1);
+
+
+
+        // let x = details.map(rahul);
+        // function rahul(value, index , array){
+        //     return value + "3";
+
+        // } 
+
+        // console.log(x);
+
+        // let x = details.filter(rahul);
+        // function rahul(value, index , array){
+        //     return value > 18;
+
+        // } 
+
+        // console.log(x);
+
+        // let x = details.reduce(rahul , 100);
+        // function rahul(total , value, index , array){
+        //     return total + value;
+
+        // } 
+
+        // console.log(x);
+
+        // let x = details.findIndex(rahul);
+        // function rahul(value, index , array){
+        //     return value > 59;
+
+        // } 
+
+        // console.log(x);
+
+        // let x = "rahul";
+        // let y = Array.from(x , ",");
+        // console.log(y);
+
+
+        // const details = ["rahul" , "arjun", "ritik" , "mayank"];
+
+        // let x = details.splice(2 , 2 , "12" , "15");
+        // let x = details.splice(2 , 1 );
+        // let x = details.slice(0 , 3);
+
+        // console.log(details);
+        // console.log(x);
+
+        // const details = ["z", "b", "t", "s"];
+        // details.sort();
+        // details.reverse();
+
+        // console.log(details);
+
+        // const number = [12, 15, 66, 7, 8];
+        // number.sort(function(ab , bb){return ab - bb  });
+        // number.reverse();
+        // console.log(number);
+
+        //  let max = Math.min.apply(null , number);
+        //  console.log(max);
+
+
+        // const arr  = [
+        //     {name:"rahul" , age:12},
+        //     {name:"rahul" , age:1},
+        //     {name:"rahul" , age:5},
+        // ]
+
+        // arr.sort(function(a , b){  return a.age - b.age })
+
+        // console.log(arr);
+
+
+        // const number = [12, 15, 66, 7, 8];
+
+        // let x = number.findIndex(x => x > 18);
+        // let x = number.includes(67);
+
+        // console.log(number);
+        // console.log(x);
+
+        // const number = [23 , 15, 66, 7, 8 ];
+        // let x = number.forEach(Rahul);
+
+        // function Rahul(birla , arr){
+        //   return birla * 2;
+        // }
+        //  console.log(x);
+
+        // const number = [23, 15, 66, 7, 8];
+
+        // let x = number.map(Rahul);
+        // function Rahul(value , index , array){
+        //   return value * 20;
+        // }
+
+        // console.log(x);
+
+        // ForEach*****************
+
+        // let x = number.forEach(Rahul);
+
+        // function Rahul(value , index , array){
+        //   return value*2;
+        // }
+
+        // console.log(x);
+
+
+        // const number = [23, 15, 66, 7, 8];
+        // let x = number.filter(myFunction)
+
+        // function myFunction(value , index , array){
+        //     return 18 > value;
+        // }
+
+        // console.log(x);
+
+        // const number = [23, 15, 66, 7, 8];
+        // let x = number.reduce(myFunction, 100)
+
+        // function myFunction(total, value, index, array) {
+
+        //     return total += value;
+
+        // }
+
+        // console.log(x);
+
+
+        // const number = [78, 15, "Rahul" , 66, 7, 8];
+        // let x = number.find(myFunction)
+
+        // function myFunction(value, index, array) {
+        //     return "Rahul" == value;
+        // }
+
+        // console.log(x);
+
+
+        // const number = [78, 15, "Rahul" , 66, 7, 8];
+
+        // let x = number.findIndex(myFunction)
+
+        // function myFunction(value, index, array) {
+        //     return "Rahul" == value;
+        // }
+
+        // console.log(x);
+
+
+        // const number = [78, 15, 66, 7, 8];
+        // let name  = number[2];
+
+        // let x = Array.from(name);
+        // console.log(x);
+
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // let k = fruits.keys();
+        // console.log(k);
+
+        // for(let n of k){
+        //     console.log(n);
+        // }
+
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // let k = fruits.entries();
+        // console.log(k);
+
+        // for(let n of k){
+        //     console.log(n);
+        // }
+
+        // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        // let k = fruits.includes("");
+        // console.log(k);
+
+
+        // const y = 25;
+        // const x = 10;
+        // console.log(x);
+
+        // const number;
+        // number =  [78, 15, 66, 7, 8];  //5465498
+        //       array = [78, 15, 66, 7, 8];   //5465498
+
+        // number[0] = 12;
+        // console.log(number);
+
+        // let pi = Math.PI;
+        // console.log(pi);
+
+        // let number1 = (25, 45, 78, 15, 55);
+        // let number2 =2;
+        // let value = Math.round(number);
+        // let value = Math.ceil(number);
+        // let value1 = Math.floor(number);
+        // console.log(value1);
+        // let value = Math.trunc(number);
+        // console.log(value);
+
+        // let value = Math.sign(number);
+        // let num = number1 ** number2 ;
+        // console.log(num);
+
+        // let value = Math.pow(number1 , number2);
+        // let value = Math.sqrt(number1);
+        // let value = Math.min(number1);
+        // let value = Math.max(25, 45, 78, 15);
+        // console.log(value);
+
+
+
+        // Math random value
+
+        // let ran = Math.random()
+        // let n = ran *1000;
+        // console.log(n);
+
+        // let x = Math.round(n);
+        // console.log(x);
+
+        // function range(min , max){
+        //     let ran = Math.random();
+        //     let n = (ran * 10) + (max - min);   
+        //     console.log(n);
+        // }
+        //range(10 , 20);
+
+        // let n = 19;
+        // switch (n) {
+        //     case 10:
+        //         console.log("match");
+        //         break;
+
+        //     case 11:
+        //         console.log("do not match");
+        //         break;
+
+        // }
+
+        // const arr = [10, 20, 30, 40, 50, 60];
+        // for (let x in arr) {
+        // console.log(x);
+        // }
+
+        //  let x = 1;
+
+        //    while(x<5){
+        //     console.log(x);
+        //     x++
+        //    }
+
+        //    let y =1;
+
+        //    do{
+        //        console.log(y);
+        //        y++
+        //    }
+        //    while(y < 5)
+
+        //  &&    ||     !
+
+
+        //   let age = 32 ;
+
+        //   if(age >= 18 && age<25 ){
+        //     console.log("You are eligible for voting");
+        //   }
+        //   else if(age >= 25){
+        //     console.log("Eligible for wedding");
+        //   }
+        //   else{
+        //     console.log("Not eligible");
+        //   }
+
+
+        // let name = "Rahul";
+        // let length1 = name.length;
+        // //   console.log(length1);
+
+        // if (length1 < 3) {
+        //     alert("error : Enter name is too short");
+        // }
+        // else if (length1 > 15) {
+        //     alert("name is too long");
+        // }
+        // else {
+        //     console.log("Success");
+        // }
+
+
+        // Switch
+
+        //  let n = "rahul" ;
+
+        //  switch (n){
+        //     case "rahul" :
+        //         console.log("20");
+        //         break;
+        //     case "birla" : 
+        //         console.log("17") 
+        //         break;
+        //     default:
+        //         console.log("not equal");
+        //         break;
+        //  }
+
+
+        // for(let i = 1 ; i<100 ; i++){
+        //     if( i % 2 == 0){
+        //         console.log(i);
+        //     }
+        // }
+
+        // console.log("hello");
+
+        // let i = 1;
+        // while (i < 2) {
+        //     console.log(i);
+        //     i++;
+        // }
+
+      
+        // do{
+        //     console.log(i);
+        //     i++;
+        // } while (i < 2) 
+
+
+        // for(let i=1 ; true ; i++){
+        //     console.log(i);
+        // }
+
+        // const x = () =>{
+        //     location.assign("https://www.google.com");
+        // }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        form input{
+            margin: 10px;
+        }
+
+        p{
+            background-color: red;
+        }
+
+        h1{
+            color: aqua;
+            position: relative;
+            left: 150px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus inventore reiciendis labore obcaecati cumque tempora? Corporis sapiente dolor quis fuga expedita eaque dolore laboriosam! Neque asperiores incidunt soluta magnam odio tempora aperiam omnis, vero harum deleniti eligendi ad iure corrupti quae earum. Nemo, accusamus facilis.</p>
+    <h1>i am a heading</h1>
+
+    <img src="" alt="">
+
+    <form action="">
+
+        <input type="text" id="fname" placeholder="fname" onchange="focusfun(this)">
+        <input type="text" id="lname" placeholder="lname" >
+        <select name="choose" id="choose" onchange="focusfun(this)">
+            <option value="India">India </option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Astralia">Astralia</option>
+        </select>
+
+        <div id="test"></div>
+    </form>
+
+    <script>
+
+        function focusfun(thi){
+           let tests =  document.getElementById("test");
+           let values = thi.value;
+           tests.innerHTML = values;
+        }
+
+    </script>
+</body>
+
+</html>

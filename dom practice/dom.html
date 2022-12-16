@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .red {
+            background-color: red;
+            margin: 20px;
+        }
+
+        .blue {
+            margin: 20px;
+            background-color: rgb(0, 26, 255);
+        }
+
+        #para_id {
+            margin: 20px;
+            color: aqua;
+        }
+
+        .sty {
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            background-color: beige;
+            font-size: 25px;
+            color: blue;
+        }
+
+        .border_cr {
+            border: 4px solid green;
+        }
+
+        .changeColor {
+            display: none;
+        }
+        .btn{
+            width: 120px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border: 2px solid silver;
+        }
+        .outer{
+            width: 70vw;
+            height: 70vh;
+            background-color: aquamarine;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .inner{
+            width: 50vw;
+            height: 50vh;
+            background-color: orange;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: white;
+        }
+        .box{
+            width: 20%;
+            height: 40%;
+        }
+
+        .red{
+            background-color: red;
+            
+        }
+        .blue{
+            background-color: blue;
+
+        }
+        .green{
+            background-color: green;
+
+        }
+      
+    </style>
+</head>
+
+<body>
+
+    <!-- <header id="ff">
+        <p class="red">
+            I am a heading
+        </p>
+        <p class="red"></p>
+        <h1>i am h1</h1>
+        <p class="a b c d sty" id="identity" name="nandini">fhgfhgf</p>
+        <p id="para_id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum suscipit atque molestiae neque
+            laborum repellat fugiat praesentium, veniam cum odit accusantium itaque consequuntur facere eius recusandae
+            delectus ratione repudiandae in.</p>
+    </header>
+    <button onclick="change()" class="btn2">change</button>
+    <br> <br>
+    <button class="btn">Add event Listner</button>-->
+
+    <div class="outer">
+        <div class="inner">
+            INNER DIV
+            <div class="box red">A</div>
+            <div class="box blue">B </div>
+            <div class="box green">C</div>
+        </div>
+    </div> 
+
+    <script>
+
+        //  Transversal methods
+
+        //    let sel1 = document.querySelector("html").parentElement;
+        //    let sel2 = document.querySelector("html").parentNode;
+        //    console.log(sel1);
+        //    console.log(sel2);
+
+        //    let sel1 = document.querySelector(".inner").children;
+        //    let sel2 = document.querySelector(".inner").childNodes;
+        //    console.log(sel1);
+        //    console.log(sel2);
+
+        //    let sel1 = document.querySelector(".inner").firstChild;
+        //    let sel2 = document.querySelector(".inner").lastChild;
+        //    console.log(sel2);
+
+        //    let sel1 = document.querySelector(".inner").firstElementChild;
+        //    let sel2 = document.querySelector(".inner").lastElementChild;
+        //    console.log(sel2);
+
+
+        //    let sel2 = document.querySelector(".inner").childNodes;
+        //    console.log(sel2);
+
+        //    let sel1 = document.querySelector(".blue").previousSibling;
+        //    console.log(sel1);
+        //    let sel1 = document.querySelector(".blue").nextSibling;
+        //    console.log(sel1);
+
+
+        //    let sel1 = document.querySelector(".blue").nextElementSibling;
+        //    console.log(sel1);
+        //    let sel1 = document.querySelector(".blue").previousElementSibling;
+        //    console.log(sel1);
+
+        // --------------------------------------------- 12/08/2022
+
+        // > Add EventListner -
+
+        // This method takes three parameter
+        // 1.event - click, mouseenter, mousehover.
+        // 2.function is to be executed.
+        // 3.useCapture - this takes true or false discuss in below.
+
+        // let x = document.querySelector("#para_id");
+        // const test = () =>{
+        //     x.style.display = "none";
+        // }
+
+        // const test = () =>{
+        //     console.log("hi");
+        // }
+        // document.querySelector(".btn").addEventListener("click" , test);
+
+
+        // document.querySelector(".btn").addEventListener("click" , function(){
+        //     console.log("hi");
+        // });
+
+        // let x = document.querySelector(".btn");
+        // x.addEventListener("click", function () {
+        //         x.style.color = "red";
+        //     });
+
+        // let y = document.querySelector(".btn2");
+        // document.querySelector(".btn").addEventListener("click", function () {
+        //          this.style.color = "red";
+        //          y.style.color = "red";
+        //     });
+
+        // document.querySelector(".btn").addEventListener("mouseover", function () {
+        //          this.style.color = "red";
+        //     });
+
+        // document.querySelector(".btn").addEventListener("mouseout", function () {
+        //          this.style.color = "white";
+        //     });
+
+   
+
+        // document.querySelectorAll(".outer")[0].addEventListener("click" , function(){
+        //     alert("Outer Div")
+        // }, true)
+
+        //  document.querySelectorAll(".inner")[0].addEventListener("click", function () {
+        //         alert("Inner Div")
+        //     }, true)
+
+
+        // document.querySelectorAll(".btn")[0].addEventListener("mouseout" , demo);
+
+        // function demo() {
+        //         this.style.backgroundColor = "orange";
+        //     }
+
+        // document.querySelectorAll(".btn")[0].addEventListener("dblclick" , function(){
+        //            this.removeEventListener("mouseout" , demo);
+        // });
+
+
+        // let sel = document.querySelectorAll(".btn")[0];
+        // sel.addEventListener("click", demo);
+
+        // let count = 0 ;
+        // function demo() {
+        //         this.style.backgroundColor = "orange";
+        //         count++;
+        //         if(count== 10){
+        //             this.removeEventListener("click", demo);
+        //         }
+        //         console.log(count);
+        //     }
+
+            
+
+
+
+                   
+
+        
+
+
+        
+       
+
+
+
+    </script>
+
+    <script>
+
+        //   let element = document.getElementById("para_id");
+        //   let element = document.getElementsByClassName("red")[0];
+        //   let element = document.getElementsByTagName("p")[2].i;
+        //   let element = document.getElementsByTagName("p")[2].innerText;
+        //   let element = document.getElementsByTagName("p")[2].innerHTML;
+        //   let element1 = document.getElementsByTagName("p")[2].getAttribute("id");
+        //   let element2 = document.getElementsByTagName("p")[2].getAttributeNode("id");
+
+        // console.log(element1);
+        //     console.log(element2);
+
+        // const change = () =>{
+        //     let element1 = document.getElementsByTagName("p")[2].classList.toggle("xyz");
+        //     console.log(element1);
+        // }
+        // let element1 = document.getElementsByTagName("p")[2].classList.contains("b");
+        // console.log(element1);
+        // let element1 = document.getElementsByTagName("p")[2].setAttribute("class" , "xyz");
+        // let element1 = document.getElementsByTagName("p")[2].removeAttribute("id");
+
+        // let element1 = document.getElementsByTagName("p")[2].addEventListener("mouseenter" , function sum(){console.log("hello")})
+
+        // let element1 = document.getElementById("ff").innerHTML;
+        // let element2 = document.getElementById("ff").innerText;
+        // console.log(element1);
+        // console.log(element2);
+
+        // We can set the properties using this methods
+
+        //  document.getElementById("identity").innerText = " Rahul birla";
+        //  document.getElementById("identity").innerHTML = "<h1>Rahul birla</h1>";
+
+        // let element = document.getElementById("identity").attributes[0].value = "xyz sty";
+
+        // let element = document.getElementById("identity").setAttribute("class", "xyz sty");
+
+        // console.log(element);
+
+        // let el = document.querySelector("p");
+        // let el = document.querySelectorAll("p")[3].getAttributeNode("class");
+
+        // let el = document.querySelectorAll("p")[2].className = "xyz";
+
+
+        //  classList methods
+
+        // let el = document.querySelectorAll("p")[2].classList.add("border_cr");
+        // let el = document.querySelectorAll("p")[2].classList.remove("a");
+        // let el = document.querySelectorAll("p")[2].classList.length;
+        // let el = document.querySelectorAll("p")[2].classList.item(4);
+        // let el = document.querySelectorAll("p")[2].classList.contains("sth");
+
+        // console.log(el);
+
+        // toggle methods
+        
+        // const change = () =>{
+        //     document.querySelector("#identity").classList.toggle("changeColor");
+        // }
+
+    </script>
+</body>
+
+</html>

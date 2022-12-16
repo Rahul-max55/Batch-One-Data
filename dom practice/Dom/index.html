@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 70vw;
+            height: 500px;
+            background-color: red;
+            margin: auto;
+        }
+
+        #heading{
+            color: white;
+            border: 5px solid black;
+        }
+
+        .outer{
+            background-color: aqua;
+            width: 80vw;
+            height: 500px;
+            margin: auto;
+        }
+        
+        .inner{
+            background-color: rgb(151, 33, 187);
+            width: 40vw;
+            height:200px;
+            margin-top: 200px 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="heading">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+        <p class="paragraph a b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam quisquam possimus autem praesentium quis ex dolor, sequi rem? Officia impedit eaque nemo, sit repellendus alias quisquam amet, culpa quidem delectus natus! Deserunt, aliquid.</p>
+    </div>
+
+    <div class="container">
+        <h1 id="heading1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+        <p class="paragraph1 a b ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam quisquam possimus autem praesentium quis ex dolor, sequi rem? Officia impedit eaque nemo, sit repellendus alias quisquam amet, culpa quidem delectus natus! Deserunt, aliquid.</p>
+    </div>
+
+    <div class="outer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quaerat soluta sed vel, ea sequi quibusdam neque veritatis voluptatem illum temporibus exercitationem!
+
+        <div class="inner">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ullam praesentium eos.
+        </div>
+
+    </div>
+
+    <div class="ul_parent">
+        <ul class="li_prent">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+    
+    <script>
+
+      
+        // document.getElementById("heading").addEventListener("click", sum)
+        // function sum(){
+        //     document.querySelector("#heading").style.backgroundColor = "red"
+        // }
+            
+        // document.getElementById("heading").addEventListener("mouseenter", function () { document.querySelector("#heading").style.backgroundColor = "green"})
+
+        // document.querySelector('.outer').addEventListener("mouseleave" , abc)
+
+        // function abc () {
+        //         alert('outer Div')
+        //     } 
+
+        // document.querySelector('.outer').addEventListener("click" , function(){
+        //       document.querySelector('.outer').removeEventListener("mouseleave" , abc)
+        // })
+
+    //    let x = document.querySelector(".paragraph").classList.item(1)            
+    //    console.log(x);
+
+
+       let x = document.querySelector(".paragraph");
+       let y = x.hasAttribute("id");          
+       console.log(y);
+
+
+
+
+    </script>
+
+</body>
+</html>
